@@ -1,0 +1,50 @@
+
+ {% for item in items %}
+<details>
+
+                  <summary> 
+                    <div class="d-flex justify-content-between align-items-start w-100">
+                      <div class="tabHeader">
+                        <div class="d-flex"><img src="/themes/custom/qadwebsite/images/suitcaseIcon.svg" alt="images">
+                          <div>
+                            <p class="mb-0">{{ item.title }}</p>
+                            <p class="mb-0">{{ item.field_location }}</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary rounded-0 d-flex align-items-center gap-2">{{ "know more" | t }}
+                        <div class="fa-solid fa-arrow-up fs-15"></div>
+                      </button>
+                    </div>
+                  </summary>
+                  <div class="tabDetails"> 
+                    <p class="text-heading text-black fs-20">Role:</p>
+                    <p>{{ item.field_location }}</p>
+                    <p class="text-heading text-black fs-20">Job Description:</p>
+                    <p>{{ item.field_content_section }}</p>
+                    <ol class="list-style2 fs-16">
+                      <li>Operate a variety of CNC and manual engineering machinery, including lathes, grinders, milling machines, drilling machines, power saws, boring machines, shapers, and presses, to produce precision parts and components.</li>
+                      <li>Demonstrate proficiency in using precision measuring instruments such as Micrometers, Vernier Calipers, Gauges, Dial Indicators, and Thickness Gauges to ensure components meet stringent accuracy requirements.</li>
+                      <li>Interpret detailed engineering drawings and sketches to manufacture parts and components, ensuring adherence to specifications and quality standards.</li>
+                      <li>Apply extensive experience in fabrication, assembly, repair, and maintenance of metal components using all workshop machine tools.</li>
+                      <li>Specialize in the repair and service of API threading connections, machining of various mandrels, and manufacturing API 6A/16A products like valves, flanges, cross-overs, adapters, spools, etc.</li>
+                      <li>Skillfully produce premium connection blanks such as VAM, TSH, JFE, etc., guaranteeing precise compatibility and functionality</li>
+                      <li>Proactively identify and resolve machining issues, such as tool breakage, material defects, or programming errors, to maintain continuous production flow and quality</li>
+                      <li>Collaborate with engineering, quality assurance, and production teams to optimize machining processes and implement continuous improvement initiatives</li>
+                    </ol>
+                    <p class="text-heading text-black fs-20">Minimum Qualifications:</p>
+                    <ol class="list-style2 fs-16">
+                      <li>Diploma in Mechanical or Certificate in ITI Machining</li>
+                      <li>Minimum 5 years of similar experience with API Threading, API 6A/16A</li>
+                    </ol>
+                    <p class="text-heading text-black fs-20">Skills Desired:</p>
+                    <ol class="list-style2 fs-16">
+                      <li>Comprehensive knowledge of engineering machinery operation, tooling, and materials used in the oil and gas industry</li>
+                      <li>Strong analytical, problem-solving, and decision-making skills</li>
+                      <li>Excellent communication and teamwork capabilities, with a commitment to safety and quality.</li>
+                      <li> Advanced skill in reading and interpreting engineering drawings and technical specifications</li>
+                    </ol>
+                    <button class="btn btn-primary rounded-0 apply-btn" data-bs-toggle="modal" data-bs-target="#careers">{{ "APPLY" | t }}</button>
+                  </div>
+                </details>
+                 {% endfor %}

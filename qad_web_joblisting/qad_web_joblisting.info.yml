@@ -1,0 +1,7 @@
+name: 'qad_web_joblisting'
+type: module
+description: 'The module is using for create and manage jobs.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block

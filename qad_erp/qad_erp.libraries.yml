@@ -1,0 +1,7 @@
+erp:
+  js:
+    js/erp.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

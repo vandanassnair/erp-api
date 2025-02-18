@@ -1,0 +1,5 @@
+name: 'erp'
+type: module
+description: 'The module is using for erp api submission'
+package: Custom
+core_version_requirement: ^10 || ^11

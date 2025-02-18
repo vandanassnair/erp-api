@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for qad_web_joblisting module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function qad_web_joblisting_theme($existing, $type, $theme, $path) {
+  return [
+    'jobslisting_block' => [
+      'variables' => ['items' => NULL],
+    ],
+    
+  ];
+}
